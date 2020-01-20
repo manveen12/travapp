@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@color/main"
+    tools:context=".LoginRegisterClasses.forgetpass">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        android:id="@+id/email"
+        android:textColorHint="@color/white"
+        android:hint="enter your registered email"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:id="@+id/submit"
+        android:onClick="submit"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:text="Submit"/>
+
+</LinearLayout>

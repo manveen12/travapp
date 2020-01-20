@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "335783324011",
+    "firebase_url": "https://tourism-a1d38.firebaseio.com",
+    "project_id": "tourism-a1d38",
+    "storage_bucket": "tourism-a1d38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335783324011:android:1edc49d025956627fec42e",
+        "android_client_info": {
+          "package_name": "com.example.vancouvertourismappfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335783324011-d02cm90vvuhhp2b85ccgaso4seiqmj5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ_kw7UzCF3qrRvMweaguGvVaQzTJ2Hfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335783324011-d02cm90vvuhhp2b85ccgaso4seiqmj5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

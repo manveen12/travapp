@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/main</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/main</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="ButtonLogin" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="colorControlHighlight">@color/yellow</item>
+    </style>
+
+    <style name="ButtonSignUp" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorButtonNormal">@color/main</item>
+        <item name="colorControlHighlight">@color/yellow</item>
+    </style>
+    <style name="ButtonRegister" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="colorButtonNormal">@color/yellow</item>
+        <item name="colorControlHighlight">@color/main</item>
+    </style>
+    <style name="CardView" parent="@style/Base.CardView" />
+    <style name="CardView.Dark" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+    <style name="CardView.Light" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <style name="HeadTitle">
+        <item name="android:textSize">50.0dip</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:color">@color/white</item>
+    </style>
+
+    <style name="RegistrationPage">
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:background">@color/bg</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="Base.ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

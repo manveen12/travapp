@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/main"
+    tools:context=".Settings">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/taxi"/>
+<Button
+    android:layout_width="match_parent"
+    android:text="Share App"
+    android:textColor="@color/white"
+    android:layout_margin="10dp"
+    android:background="@color/bg"
+    android:onClick="share"
+    android:layout_height="wrap_content"
+
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Rate App"
+        android:textColor="@color/white"
+        android:background="@color/bg"
+        android:layout_margin="10dp"
+
+        android:onClick="rate"
+        android:layout_height="wrap_content"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Call Us"
+        android:onClick="call"
+        android:layout_margin="10dp"
+
+        android:textColor="@color/white"
+        android:background="@color/bg"
+        android:layout_height="wrap_content"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Email Us"
+        android:onClick="email"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+
+        android:background="@color/bg"
+        android:layout_height="wrap_content"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:text="Log Out"
+        android:layout_margin="10dp"
+
+        android:onClick="logout"
+        android:textColor="@color/white"
+        android:background="@color/bg"
+        android:layout_height="wrap_content"
+
+        />
+</LinearLayout>

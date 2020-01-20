@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222942"
+    android:orientation="vertical"
+    tools:context=".CarRentalClasses.CarRentalReviewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#38b6ff "
+                android:gravity="center"
+                android:text="Search your Booking"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="#00BCD4"
+                app:srcCompat="@drawable/search" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actvBookingID"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                     />
+
+                <Button
+                    android:id="@+id/btnSearchcBookingDB"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="#00BCD4"
+                    android:layout_marginBottom="1dp"
+                    android:textColor="#fff"
+                    android:text="Search" />
+
+                <Button
+                    android:id="@+id/btnReset"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:background="#00BCD4"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:text="Reset" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#38b6ff "
+                android:gravity="center"
+                android:text="Result"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Personal Information"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Name"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Phone Number"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="E - Mail"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvEMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="License #"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvLicense"
+                    android:layout_width="393dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Booked Vehicle"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCar"
+                    android:layout_width="401dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="229dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Color"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvColor"
+                    android:layout_width="396dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Pick-up Date"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Drop-off Date"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:backgroundTint="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Card Type"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Card Number"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCardNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="Price Breakdown"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Car Price"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Insurance"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Tax(15%)"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="Total Price"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:textColor="@color/bg"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
